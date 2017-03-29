@@ -13,7 +13,7 @@
   "basePath": "./src/pages/",
   "cdn": {
     "js": [],
-    "css": []
+    "css": ["https://cdn.staticfile.org/normalize/6.0.0/normalize.min.css"]
   },
   "externals": {
     "vue": "Vue",

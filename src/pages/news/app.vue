@@ -1,9 +1,14 @@
 <template>
   <div class="container">
-    <h1>Multiple Pages Front-end Project-News</h1>
+    <div class="background-img">
+      <div class="background-layout"></div>
+    </div>
+    <div class="content">
+      <h1>Multiple Pages Front-end Project-News</h1>
+    </div>
   </div>
 </template>
 
-<style>
+<style lang="scss">
   @import "../../sass/common.scss";
 </style>
