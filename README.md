@@ -1,5 +1,5 @@
-# sojg-front-end
-> SouJingGuan front-end project
+# multiple-pages-vue2
+> Multiple pages front-end project
 
 ## Development
 
