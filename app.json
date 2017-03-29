@@ -1,0 +1,15 @@
+{
+  "pages": [
+    {
+      "entry": "home",
+      "title": "Multiple Pages Front-end Project",
+      "cdn": {}
+    }
+  ],
+  "basePath": "./src/pages/",
+  "cdn": {},
+  "externals": {
+    "vue": "Vue",
+    "axios": "axios"
+  }
+}
