@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Multiple Pages Front-end Project</h1>
+    <h1>Multiple Pages Front-end Project-Home</h1>
     <index-hello></index-hello>
   </div>
 </template>
@@ -14,12 +14,5 @@
 </script>
 
 <style>
-  .container {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: fantasy;
-    transform: translate(-50%, -50%);
-  }
+  @import "../../sass/common.scss";
 </style>

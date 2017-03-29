@@ -1,13 +1,20 @@
 {
   "pages": [
     {
-      "entry": "home",
-      "title": "Multiple Pages Front-end Project",
+      "entry": "index",
+      "title": "Multiple Pages Front-end Project-Home",
+      "cdn": {}
+    }, {
+      "entry": "news",
+      "title": "Multiple Pages Front-end Project-News",
       "cdn": {}
     }
   ],
   "basePath": "./src/pages/",
-  "cdn": {},
+  "cdn": {
+    "js": [],
+    "css": []
+  },
   "externals": {
     "vue": "Vue",
     "axios": "axios"

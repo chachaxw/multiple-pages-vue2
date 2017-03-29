@@ -36,7 +36,7 @@ cooking.set({
 
   devServer: {
     hostname: 'localhost',
-    port: 3000,
+    port: 3030,
     publicPath: '/'
   },
 
