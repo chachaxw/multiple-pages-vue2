@@ -56,7 +56,7 @@ cooking.set({
   extractCSS: '[name].[contenthash:7].css',
   alias: {
     'src': path.join(__dirname, 'src'),
-    'components': path.join(__dirname, 'src/components')
+    'components': path.join(__dirname, 'src/components'),
   },
   extends: ['vue2', 'lint', 'sass', 'autoprefixer']
 });

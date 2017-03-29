@@ -1,18 +1,26 @@
 <template>
   <div class="container">
-    <h1>Multiple Pages Front-end Project-Home</h1>
-    <index-hello></index-hello>
+    <div class="background-img">
+      <div class="background-layout"></div>
+    </div>
+    <div class="content">
+      <h1>Multiple Pages Front-end Project-Home</h1>
+      <p v-text="hello"></p>
+    </div>
   </div>
 </template>
 
 <script>
-  import indexHello from 'components/home/index-hello';
   export default {
     name: 'app',
-    components: { indexHello }
+    data() {
+      return {
+        hello: 'Hello, this is a vue project.'
+      };
+    }
   };
 </script>
 
-<style>
+<style lang="scss">
   @import "../../sass/common.scss";
 </style>

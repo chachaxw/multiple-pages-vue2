@@ -1,8 +1,30 @@
-.container {
+body, html {
+  margin: 0;
+  color: #fff;
   text-align: center;
+  font-family: fantasy;
+  background-color: #fbfbfb;
+}
+.background-img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: center no-repeat;
+  background-size: cover;
+  background-image: url(/static/assets/images/background.jpg);
+  .background-layout {
+    height: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(-225deg, rgba(0, 5, 59, 1) 0, rgba(0, 5, 59, .8) 70%, rgba(0, 5, 59, .6) 100%);
+  }
+}
+.content {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-family: fantasy;
+  z-index: 1;
   transform: translate(-50%, -50%);
 }
