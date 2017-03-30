@@ -1,5 +1,5 @@
 # multiple-pages-vue2
-> Multiple pages front-end project
+> Vue2 multiple pages front-end project by webpack and cooking
 
 ## Development
 
@@ -12,6 +12,5 @@ npm run dev
 ```
 npm run dist
 ```
-
-## License
-ISC
+## Screen Shot
+![screen shot](http://7xqacx.com1.z0.glb.clouddn.com/multiple-pages-vue2.jpg)
