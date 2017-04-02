@@ -1,27 +1,24 @@
-const express = require('express');
-const fs = require('fs');
-const cors = require('cors');
-const path = require('path');
-const bodyParser = require('body-parser');
-const app = express();
+#!/usr/bin/env node
+const Koa = require('koa');
+const argv = require('yargs').argv;
+const controller = require('./controller');
+const router = require('koa-router')();
+const cors = require('./middleware/cors');
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.set('port', process.env.PORT || 8080);
+const port = parseInt(argv.port, 10) || parseInt(argv.p, 10) || 8080;
+const host = argv.host || argv.h || 'localhost';
 
-// 允许跨域(调试)
+const app = new Koa();
+
 app.use(cors());
 
-// 自动require controller文件
-const files = fs.readdirSync('server/controller');
-files.forEach(function(file) {
-  if (file.indexOf('.controller') < 0) return;
-  require('./controller/' + file)(app);
+app.use(controller(router));
+
+app.on('error', (err, ctx) => {
+	console.log('GLOBAL-ERROR:');
+	console.log(err);
 });
 
-app.listen(app.get('port'), function(err) {
-  if(err) {
-    console.log(err);
-  }
-  console.log('CORS-enabled web server listening on the localhost:'+ app.get('port'));
-});
+app.listen(port, host);
+
+console.log(`Mock server is running on: ${host}:${port}`);
