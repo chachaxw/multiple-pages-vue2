@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "cooking watch -p",
     "dist": "cooking build -p",
+    "server": "supervisor node server/server.js",
     "deploy": "cooking build --no-color"
   },
   "author": "chacha",
@@ -18,6 +19,9 @@
     "vue-template-compiler": "^2.2.6"
   },
   "devDependencies": {
-    "cooking-vue2": "*"
+    "body-parser": "^1.17.1",
+    "cooking-vue2": "*",
+    "cors": "^2.8.1",
+    "express": "^4.15.2"
   }
 }
