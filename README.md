@@ -8,6 +8,11 @@ npm i cooking-cli -g
 npm run dev
 ```
 
+## Mock server
+```
+npm run server
+```
+
 ## Production
 ```
 npm run dist
@@ -19,4 +24,4 @@ npm run dist
 [cooking doc](http://elemefe.github.io/cooking/)
 [vue2 doc](https://cn.vuejs.org)
 [axios doc](https://github.com/mzabriskie/axios)
-[express dox](http://www.expressjs.com.cn)
+[express dox](http://koa.bootcss.com)
