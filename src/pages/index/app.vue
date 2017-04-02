@@ -15,7 +15,7 @@
     name: 'app',
     data() {
       return {
-        hello: 'Hello, this is a vue project.'
+        hello: 'Hello chacha!'
       };
     }
   };
