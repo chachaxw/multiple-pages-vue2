@@ -17,14 +17,18 @@ const merge = (a, b) => {
   };
 };
 
+const template = process.env.NODE_ENV === 'development' ?
+                 path.resolve(__dirname, 'index.tpl') :
+                 path.resolve(__dirname, 'index.prod.tpl');
 const templates = () => {
   return App.pages.map(p => {
     return {
       title: p.title,
       filename: p.entry + '.html',
-      template: path.resolve(__dirname, 'index.tpl'),
+      template: template,
       cdn: merge(App.cdn, p.cdn),
-      chunks: ['vendor', 'manifest', p.entry]
+      mock: p.mock,
+      chunks: ['vendor', 'manifest', p.entry],
     };
   });
 };
@@ -47,7 +51,7 @@ cooking.set({
   minimize: true,
   chunk: true, // see https://cookingjs.github.io/zh-cn/configuration.html#chunk
   postcss: [
-    // require('...')
+    // require('autoprefixer')
   ],
   publicPath: '/dist/',
   assetsPath: 'static',
