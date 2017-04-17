@@ -37,13 +37,11 @@ cooking.set({
   entry: entries(),
   dist: './dist',
   template: templates(),
-
   devServer: {
     hostname: 'localhost',
     port: 3030,
     publicPath: '/'
   },
-
   // production
   clean: true,
   hash: true,

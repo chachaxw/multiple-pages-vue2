@@ -13,7 +13,7 @@
   "author": "chacha",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.16.0",
+    "axios": "^0.16.1",
     "babel-polyfill": "*",
     "vue": "^2.0.1",
     "vue-template-compiler": "^2.2.6"
@@ -23,6 +23,7 @@
     "koa": "^2.2.0",
     "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.1.1",
+    "vue-server-renderer": "^2.2.6",
     "yargs": "^7.0.2"
   },
   "engines": {
