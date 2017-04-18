@@ -22,8 +22,10 @@
     "cooking-vue2": "*",
     "koa": "^2.2.0",
     "koa-bodyparser": "^4.2.0",
-    "koa-router": "^7.1.1",
+    "koa-router": "next",
+    "koa-static": "^3.0.0",
     "vue-server-renderer": "^2.2.6",
+    "webpack-prerender-spa-plugin": "^0.2.0",
     "yargs": "^7.0.2"
   },
   "engines": {
